@@ -1,0 +1,60 @@
+p {
+color: #5d5d5d;
+}
+h1 {
+color: #47c;
+}
+h5 {
+color: maroon;
+}
+h4 {
+border-bottom: 1px solid #ddd;
+}
+table td {
+text-align: left;
+border: 1px solid black;
+padding: 1px 5px;
+}
+table caption {
+color: blue;
+border-bottom: 2px solid #bbb;
+}
+.fake-table {
+font-size: 11px;
+display: block;
+width: 690px;
+line-height: .983;
+}
+.left-tab{
+height: 2em;
+width: 20%;
+display: inline;
+float: left;
+}
+.right-tab{
+height: 2em;
+width: 80%;
+display: block;
+margin-bottom: 2px;
+border-bottom: thin dashed #eee;
+}
+/* this is a comment block */
+
+/* below is a class selector
+classes start with a dot and ids start with a has sign */
+
+.bluebox {
+height: 150px;
+width: 300px;
+background: #88aaff;
+border: 2px solid #aaa;
+margin-bottom: 8px;
+}
+
+#greenBox {
+height: 150px;
+width: 500px;
+background: #ffaa88;
+border: 2px solid #aaa;
+}
+/* Have A Wonderful Time */
