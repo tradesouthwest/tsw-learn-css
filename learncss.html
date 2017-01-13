@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>TSW Learn CSS</title>
+<link href="learncss-style.css" rel="stylesheet">
+<style>
+body {
+line-height: 1.4185;
+font-size: 15px;
+color: #555;
+width: 90%;
+margin: 0 auto;
+font-family: sans-serif;
+background: #fafafa;
+}
+main,article,aside,footer,header,nav{
+display: block;
+box-sizing: border-box;
+position: relative;
+}
+main {
+width: 100%;
+max-width: 1020px;
+}
+main:after {
+content:" ";
+clear: both;
+min-width: 700px;
+margin: 0 auto;
+width: 100%;
+height: 1px;
+background: #ddd;
+display: table;
+}
+article {
+max-width: 700px;
+background: #fff;
+padding: 12px;
+float: left;
+}
+article p {
+font-size: 14px;
+}
+aside {
+width: 290px;
+min-height: 500px;
+margin-left: 700px;
+background: #efefef;
+margin: 0;
+float: right;
+padding: 5px;
+}
+footer {
+width: 100%;
+position: relative;
+height: 60px;
+bottom: -1px;
+background: #e8e8e8;
+}
+pre{
+overflow: auto;
+max-width: 100%;
+}
+code {
+background: #fda;
+padding: 1px;
+color: brown;
+}
+</style>
+</head>
+<body>
+
+	<header><h1>My CSS Page</h1></header>
+
+	<nav>
+		<p><a href="learncss.html">Home</a> | <a href="learncss.html">Home</a> | <a href="learncss.html">Home</a></p>
+	</nav>
+
+	<main role="main">
+
+		<article>
+			<h1>My article</h1>
+			<p>Cascading Style Sheets (CSS) are short pieces of code put into a file (style <u>sheet</u>) which create changes to a page element according to the code you use to change the element<sup>1</sup>. Styles can be put into the 'head' of a file, but this practice slows page load speed. This demo uses styles in the head <em>and</em> an external stylesheet as well.</p>
+            <p>Styles put in an external stylesheet are call "external stylesheets" and are the preferred way to include styles into a page. External stylesheets can be "linked" from your Website's pages using an anchor link inside of the top---before body tag---of the file that is going to use the external stylesheet to render the styles.</p>
+            <p>You will need to open <b>this file</b> in a text editor... NOT in Word, but an actual text editor<sup>2</sup>. Then, after you make your changes, you can refresh the browser to see the results. Once you look at this page&#39;s HTML code, you will see the CSS in the top (head) of the page and you can manipulate the code inside of this file. here is what the <code>body</code> element is using for styles:</p>
+            <h5>Explaining styles for this example body element tag</h5>
+            <div class="fake-table">
+                <div class="left-tab">body {</div> <div class="right-tab"></div>
+                <div class="left-tab">line-height: 1.48; </div><div class="right-tab"><- sets distance between top and bottom of words (1.48 times the word height)</div>
+                <div class="left-tab">font-size: 16px;</div><div class="right-tab">   <- standardize font size (applies to paragraph element ony (&lt;p>)</div>
+                <div class="left-tab">color: #555;</div> <div class="right-tab">      <- sets color of ALL page (body) text</div>
+                <div class="left-tab">width: 90%; </div> <div class="right-tab">      <- width of body to fit inside of browser</div>
+                <div class="left-tab">margin: 0 auto;</div> <div class="right-tab">   <- sets margins 0 = top and bottom, auto = left and right</div>
+                <div class="left-tab">}</div><div class="right-tab"></div>
+            </div>
+            <h4>Try Me</h4>
+            <p>If you want to try a quick change, change the <code>font-family: sans-serif</code> in the 'head' (inline styles) to this:</p>
+            <p><code>font-family: serif;</code><br> or this<br><code>font-family: "Lucida Console", Monaco, monospace</code></p>
+            <p>Copy styles into the body <b>selector*</b> exactly like it is in the above paragraph... CSS is very particular and one missing comma or one missing double-quote will blow up the whole page.</p>
+
+            <p>*</p>
+<pre>
+CSS Syntax
+
+A CSS rule-set consists of a selector and a declaration block:
+
+The selector points to the HTML element you want to style.
+
+The declaration block contains one or more declarations separated by semicolons.
+
+Example
+p {
+    color: red;
+    text-align: center;
+}
+</pre>
+
+            <div class="bluebox">
+                <p>text goes here</p>
+            </div>
+                <div id="greenBox">
+                    <p>text goes here</p>
+                </div>
+
+            <small>1 An HTML element is an individual component of an HTML document or web page <a href="https://en.wikipedia.org/wiki/HTML_element" title="elements">wikipedia explains <em>element</em></a>
+            <br>2  Web pages can be created and modified by using professional HTML editors. <a href="http://www.w3schools.com/html/html_editors.asp" title="editors">Editors</a></small>
+		</article>
+
+		<aside>
+			<h3>More information</h3>
+
+            <p>A table element</p>
+            <table>
+            <caption>Molly's Daughters</caption>
+
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Birthday</th>
+            </tr>
+
+            <tr>
+            <td>Jackie</td>
+            <td>19</td>
+            <td>April 5</td>
+            </tr>
+
+            <tr>
+            <td>Beverly</td>
+            <td>18</td>
+            <td>January 14</td>
+            </tr>
+
+            </table>
+            <h3>Links for Learning</h3>
+            <p>Try these for starters-</p>
+            <p><a title="link opens in new tab" target="_blank" href="http://www.w3schools.com/css/">http://www.w3schools.com/css/</a>
+            <p><a title="link opens in new tab" target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">https://developer.mozilla.org/en-US/docs/Learn/CSS</a>
+            <p><a title="link opens in new tab" target="_blank" href="http://learn.shayhowe.com/">http://learn.shayhowe.com/</a>
+
+		</aside>
+
+	</main>
+
+	<footer><p>Copyright <script>document.write(new Date().getFullYear())</script></p></footer>
+</body>
+</html>
