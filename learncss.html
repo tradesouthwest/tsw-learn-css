@@ -88,14 +88,14 @@ color: brown;
             <div class="fake-table">
                 <div class="left-tab">body {</div> <div class="right-tab"></div>
                 <div class="left-tab">line-height: 1.48; </div><div class="right-tab"><- sets distance between top and bottom of words (1.48 times the word height)</div>
-                <div class="left-tab">font-size: 16px;</div><div class="right-tab">   <- standardize font size (applies to paragraph element ony (&lt;p>)</div>
+                <div class="left-tab">font-size: 16px;</div><div class="right-tab">   <- standardize font size (applies to most all elements in page (body)</div>
                 <div class="left-tab">color: #555;</div> <div class="right-tab">      <- sets color of ALL page (body) text</div>
                 <div class="left-tab">width: 90%; </div> <div class="right-tab">      <- width of body to fit inside of browser</div>
-                <div class="left-tab">margin: 0 auto;</div> <div class="right-tab">   <- sets margins 0 = top and bottom, auto = left and right</div>
+                <div class="left-tab">margin: 0 auto;</div> <div class="right-tab">   <- sets margins - "0 auto" essentially centers the page in a browser</div>
                 <div class="left-tab">}</div><div class="right-tab"></div>
             </div>
             <h4>Try Me</h4>
-            <p>If you want to try a quick change, change the <code>font-family: sans-serif</code> in the 'head' (inline styles) to this:</p>
+            <p>If you want to try a quick change, change the <code>font-family: sans-serif</code> in the 'head' (inline styles) of this file, to this:</p>
             <p><code>font-family: serif;</code><br> or this<br><code>font-family: "Lucida Console", Monaco, monospace</code></p>
             <p>Copy styles into the body <b>selector*</b> exactly like it is in the above paragraph... CSS is very particular and one missing comma or one missing double-quote will blow up the whole page.</p>
 
@@ -117,10 +117,10 @@ p {
 </pre>
 
             <div class="bluebox">
-                <p>text goes here</p>
+		    <p>This box is made using a CSS <b>class</b> selector.</p>
             </div>
                 <div id="greenBox">
-                    <p>text goes here</p>
+			<p>This box is made using a CSS <b>id</b> selector.</p>
                 </div>
 
             <small>1 An HTML element is an individual component of an HTML document or web page <a href="https://en.wikipedia.org/wiki/HTML_element" title="elements">wikipedia explains <em>element</em></a>
