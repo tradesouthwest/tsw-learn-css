@@ -41,7 +41,7 @@ border-bottom: thin dashed #eee;
 /* this is a comment block */
 
 /* below is a class selector
-classes start with a dot and ids start with a has sign */
+classes start with a dot and ids start with a hash sign */
 
 .bluebox {
 height: 150px;
