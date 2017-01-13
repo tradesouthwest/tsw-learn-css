@@ -15,11 +15,9 @@ Too many times have I had to refer people to W3 pages or other similar sites in 
 ## Contributors
 Open for contributions, PLEASE.
 
-Tradesouthwest 2015
+Tradesouthwest 2017
 Larry Judd Oliver - Phoneix, AZ USA
 http://tradesouthwest.com
-demo: http://truelisting.me/dev/sem/
-helpful linkfor github commands: https://www.atlassian.com/git/
 
 ## License
 Licensed under Apache Open Source. You can use this script for free for any private or commercial projects.
